@@ -9,4 +9,12 @@ router.get('/', function(req, res, next) {
   });
 });
 
+router.post('/', function(req, res, next) {
+    console.log('Name: ' + req.body.name);
+    console.log('Email: ' + req.body.email);
+    console.log('Message: ' + req.body.messages);
+
+    res.send('Form posted successfully');
+});
+
 module.exports = router;
